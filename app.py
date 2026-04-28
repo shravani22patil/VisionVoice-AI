@@ -83,12 +83,21 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # --- SIDEBAR: CONFIG ---
+
 with st.sidebar:
     st.title("⚙️ Configuration")
-    # API key is preserved from your source
-    api_key = "" 
-    genai.configure(api_key=api_key)
-    st.info("Using Gemini 1.5 Flash for Multimodal Analysis.")
+    
+    # Check if the secret exists, otherwise fallback to empty string
+    if "GEMINI_API_KEY" in st.secrets:
+        api_key = st.secrets["GEMINI_API_KEY"]
+    else:
+        api_key = st.sidebar.text_input("Enter Gemini API Key", type="password")
+    
+    if api_key:
+        genai.configure(api_key=api_key)
+        st.success("API Key Loaded!")
+    else:
+        st.warning("Please add GEMINI_API_KEY to Streamlit Secrets.")
 
 # --- CORE LOGIC ---
 def analyze_image(img, lang):
