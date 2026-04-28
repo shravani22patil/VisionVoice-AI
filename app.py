@@ -105,7 +105,7 @@ def analyze_image(img, lang):
         st.error("Please provide a valid API Key!")
         return None, None
     
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('models/gemini-1.5-flash')
     
     # Prompt generalized for all images/documents as requested
     prompt = f"""
