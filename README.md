@@ -1,6 +1,6 @@
-# 🎙️ VisionVoice AI: Multimodal Product & Receipt Explorer
+# 🎙️ VisionVoice AI: Real-Time Multimodal Intelligence & Audio Pipeline
 
-**VisionVoice AI** is a high-performance multimodal application that bridges the gap between Computer Vision and Audio Synthesis. Built for the 2026 AI ecosystem, it leverages **Gemini 1.5 Flash** and **gTTS** to provide real-time, multilingual technical analysis of gadgets and financial receipts, delivered through a sophisticated "Dark-Glass" interactive interface.
+**VisionVoice AI** is a high-performance multimodal application designed to bridge the gap between complex visual reasoning and neural audio synthesis. Built for the modern AI ecosystem, it leverages **Gemini 2.5 Flash** (updated for 2026) and **gTTS** to provide real-time technical analysis of any visual input—from industrial documents and hardware to daily environmental scenes—delivered through a sophisticated **"Glassmorphism"** interactive interface.
 
 ---
 
